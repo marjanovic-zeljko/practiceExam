@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to demo charter information page!"
+    />
+    <title>Charter details</title>
+  </head>
+  <body>
+    <div id="character-details">
+      <a href="index.html" class="back"><span> < BACK</span></a>
+    </div>
+    <div class="charterInfo">
+      <h4>Charcter info</h4>
+    </div>
+
+    <div class="containerInfo">
+      <div>
+        <p>Species</p>
+        <p id="species"></p>
+      </div>
+      <div>
+        <p>Origin</p>
+        <p id="origin"></p>
+      </div>
+      <div>
+        <p>Location</p>
+        <p id="location"></p>
+      </div>
+    </div>
+
+    <div class="containerInfo">
+      <div>
+        <p>Status</p>
+        <p id="status"></p>
+      </div>
+      <div>
+        <p>Gender</p>
+        <p id="gender"></p>
+      </div>
+    </div>
+    <div class="charterInfo second">
+      <h4>Episodes</h4>
+      <div id="episodes"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .back {
+    color: white;
+    margin: 2%;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.4vh;
+  }
+
+  .back:hover {
+    opacity: 0.8;
+  }
+  #character-details {
+    display: flex;
+    background-color: #3e1f92;
+  }
+  #character-details h2 {
+    align-self: flex-end;
+    margin: 30px;
+    color: white;
+  }
+  .characterImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 50px;
+    position: relative;
+    top: 100px;
+  }
+
+  .charterInfo {
+    display: flex;
+    margin-top: 150px;
+    margin-left: 10%;
+    flex-direction: column;
+  }
+
+  .containerInfo {
+    display: flex;
+    width: 100%;
+  }
+  .charterInfo.second {
+    margin-top: 100px;
+  }
+  .charterInfo h4 {
+    width: 100%;
+    font-weight: 300;
+  }
+
+  #episodes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #episodes a {
+    width: 100%;
+  }
+
+  .containerInfo div {
+    margin-left: 10%;
+    margin-top: 30px;
+    color: darkgrey;
+  }
+
+  .containerInfo div p:nth-child(1) {
+    color: darkgrey;
+    font-size: 1.4vh;
+  }
+
+  .containerInfo div p {
+    margin-top: 10px;
+    color: black;
+    font-size: 1.5vh;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .back {
+      margin: 5%;
+    }
+    .containerInfo div p {
+      margin-top: 3px;
+    }
+    .charterInfo {
+      margin-top: 70px;
+    }
+
+    #character-details h2 {
+      margin: 10px 0;
+      position: relative;
+      right: 20px;
+    }
+    .charterInfo.second {
+      margin-top: 50px;
+    }
+    .characterImage {
+      width: 100px;
+      height: 100px;
+      right: 40px;
+      top: 50px;
+    }
+    #episodes a {
+      padding: 1px 0;
+      font-size: 2vh;
+    }
+  }
+</style>

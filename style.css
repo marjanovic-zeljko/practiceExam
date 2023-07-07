@@ -1,0 +1,129 @@
+/* CSS stilovi za raspored elemenata */
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "Open Sans", sans-serif;
+}
+/* Search bar start */
+#searchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 80%;
+  height: 50px;
+  margin-top: 20px;
+  padding: 10px 10px;
+  background-color: #f2f4f7;
+  border: none;
+  font-size: 1.6vh;
+}
+/* Search bar end */
+
+.loading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.characterListContainer {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.characters {
+  font-size: 2vh;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.character-card {
+  display: flex;
+  width: 100%;
+  margin: 10px;
+  padding: 10px 10px 30px 10px;
+  float: left;
+  border-bottom: 1px solid #0000001a;
+}
+
+.character-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.character-text {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.character-text-species p:nth-child(1),
+.character-text-origin p:nth-child(1),
+.character-text-location p:nth-child(1) {
+  font-size: 1.2vh;
+  color: darkgray;
+}
+
+h3 {
+  margin-left: 20px;
+  width: 100%;
+  margin-bottom: 2px;
+  margin-top: 20px;
+}
+
+p {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 1.4vh;
+}
+
+.pagination {
+  clear: both;
+  text-align: center;
+  margin-top: 20px;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+  .search-input {
+    padding: 10px 10px;
+    height: 50px;
+  }
+  .character-card {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .character-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  h3 {
+    margin-top: 5px;
+  }
+  p {
+    font-size: 1.1vh;
+  }
+
+  .character-text-species p:nth-child(1),
+  .character-text-origin p:nth-child(1),
+  .character-text-location p:nth-child(1) {
+    font-size: 1vh;
+  }
+}
