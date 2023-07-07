@@ -55,6 +55,12 @@ span {
   border-bottom: 1px solid #0000001a;
 }
 
+.character-card:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
 .character-card img {
   width: 120px;
   height: 120px;
